@@ -1,0 +1,7 @@
+{
+  "name": "Dash3Tech",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}

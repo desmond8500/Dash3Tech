@@ -1,0 +1,70 @@
+/* Thème Dash3Tech : reprend celui de Dash3 Mobile (bleu canard, cartes blanches arrondies). */
+   http://ionicframework.com/docs/theming/ */
+
+:root {
+  /* Police */
+  --ion-font-family: "Nunito Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Couleur principale : bleu canard du design */
+  --ion-color-primary: #1690b7;
+  --ion-color-primary-rgb: 22, 144, 183;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #137fa1;
+  --ion-color-primary-tint: #2d9bbe;
+
+  /* « secondary » est utilisé par les barres d'outils et icônes : même teinte */
+  --ion-color-secondary: #1690b7;
+  --ion-color-secondary-rgb: 22, 144, 183;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #137fa1;
+  --ion-color-secondary-tint: #2d9bbe;
+
+  /* Statuts (pastilles du design) */
+  --ion-color-success: #34b55a;
+  --ion-color-success-rgb: 52, 181, 90;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #2e9f4f;
+  --ion-color-success-tint: #48bc6b;
+
+  --ion-color-warning: #f4c23a;
+  --ion-color-warning-rgb: 244, 194, 58;
+  --ion-color-warning-contrast: #3a2f00;
+  --ion-color-warning-contrast-rgb: 58, 47, 0;
+  --ion-color-warning-shade: #d7ab33;
+  --ion-color-warning-tint: #f5c84e;
+
+  --ion-color-danger: #e5484d;
+  --ion-color-danger-rgb: 229, 72, 77;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #ca3f44;
+  --ion-color-danger-tint: #e85a5f;
+
+  /* Surfaces propres au design */
+  --dash-header: var(--ion-color-primary);
+  --dash-sheet: #ffffff;
+  --dash-soft: #f2f6f8;
+  --dash-line: #e3eaef;
+  --dash-title: var(--ion-color-primary);
+  --dash-text: #2b3a42;
+  --dash-muted: #8a99a3;
+}
+
+/* Mode sombre (Paramètres > Thème) : en-tête bleu canard conservé, feuilles sombres */
+.ion-palette-dark {
+  --dash-header: #0f6f8e;
+  --dash-sheet: #141c21;
+  --dash-soft: #1d282e;
+  --dash-line: #2a3840;
+  --dash-title: #4fb7d8;
+  --dash-text: #e3eaee;
+  --dash-muted: #8fa1ab;
+}
+
+ion-content {
+  --background: var(--dash-sheet);
+  --color: var(--dash-text);
+}
